@@ -8,8 +8,17 @@
 
 #include <stdio.h>
 
+void test_sizeof() {
+    printf("int has %tu bytes\n", sizeof(int));
+    printf("char has %tu bytes\n", sizeof(char));
+    printf("long has %tu bytes\n", sizeof(long));
+    printf("long long has %tu bytes\n", sizeof(long long));
+    printf("float has %tu bytes\n", sizeof(float));
+    printf("double has %tu bytes\n", sizeof(double));
+}
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    test_sizeof();
+    
     return 0;
 }
